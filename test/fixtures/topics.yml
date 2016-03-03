@@ -1,0 +1,101 @@
+# == Schema Information
+#
+# Table name: topics
+#
+#  id               :integer          not null, primary key
+#  forum_id         :integer
+#  user_id          :integer
+#  user_name        :string
+#  name             :string
+#  posts_count      :integer          default(0), not null
+#  waiting_on       :string           default("admin"), not null
+#  last_post_date   :datetime
+#  closed_date      :datetime
+#  last_post_id     :integer
+#  current_status   :string           default("new"), not null
+#  private          :boolean          default(FALSE)
+#  assigned_user_id :integer
+#  cheatsheet       :boolean          default(FALSE)
+#  points           :integer          default(0)
+#  post_cache       :text
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
+#  locale           :string
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+pending:
+  id: 1
+  forum_id: 1
+  user_id: 2
+  assigned_user_id: 1
+  name: "Private topic"
+  current_status: open #because the user posted, we replied and now its open to a user response.
+  private: true
+  post_cache: This is a private post, should not be searchable This is a private reply, should not be searchable
+
+open:
+  id: 2
+  forum_id: 1
+  user_id: 2
+  assigned_user_id: 1
+  name: "Open private topic"
+  current_status: pending
+  private: true
+  post_cache:
+
+closed:
+  id: 3
+  forum_id: 1
+  user_id: 2
+  name: "Closed private topic"
+  current_status: closed
+  private: true
+  post_cache:
+
+public:
+  id: 4
+  forum_id: 3
+  user_id: 3
+  name: "Public topic"
+  current_status: open
+  private: false
+  post_cache: This is a public post, should be searchable
+
+new:
+  id: 5
+  forum_id: 3
+  user_id: 3
+  name: "New Public topic"
+  current_status: new
+  private: false
+  post_cache: This is a new public post, should be searchable
+
+private:
+  id: 6
+  forum_id: 1
+  user_id: 2
+  name: "New Private topic"
+  current_status: new
+  private: true
+  post_cache: This is a new private post
+  locale: nl
+
+qna_post:
+  id: 7
+  forum_id: 5
+  user_id: 2
+  name: "New Question"
+  current_status: new
+  private: false
+  post_cache: This is a new Q&A
+
+grid_post:
+  id: 8
+  forum_id: 4
+  user_id: 2
+  name: "New Idea"
+  current_status: new
+  private: false
+  post_cache: This is a new Idea

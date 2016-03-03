@@ -1,0 +1,86 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id                     :integer          not null, primary key
+#  login                  :string
+#  identity_url           :string
+#  name                   :string
+#  admin                  :boolean          default(FALSE)
+#  bio                    :text
+#  signature              :text
+#  role                   :string           default("user")
+#  home_phone             :string
+#  work_phone             :string
+#  cell_phone             :string
+#  company                :string
+#  street                 :string
+#  city                   :string
+#  state                  :string
+#  zip                    :string
+#  title                  :string
+#  twitter                :string
+#  linkedin               :string
+#  thumbnail              :string
+#  medium_image           :string
+#  large_image            :string
+#  language               :string           default("en")
+#  assigned_ticket_count  :integer          default(0)
+#  topics_count           :integer          default(0)
+#  active                 :boolean          default(TRUE)
+#  created_at             :datetime         not null
+#  updated_at             :datetime         not null
+#  email                  :string           default(""), not null
+#  encrypted_password     :string           default(""), not null
+#  reset_password_token   :string
+#  reset_password_sent_at :datetime
+#  remember_created_at    :datetime
+#  sign_in_count          :integer          default(0), not null
+#  current_sign_in_at     :datetime
+#  last_sign_in_at        :datetime
+#  current_sign_in_ip     :inet
+#  last_sign_in_ip        :inet
+#  provider               :string
+#  uid                    :string
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+admin:
+  id: 1
+  login: admin
+  identity_url: MyString
+  name: Admin User
+  email: admin@test.com
+  admin: true
+  role: admin
+  encrypted_password: $2a$10$NDaQ2l6.7dqkWTbqZGX6RuokqiUrfrcouiKc3YCGKIvz9KxhPt7uK
+
+user:
+  id: 2
+  login: scott
+  identity_url: MyString
+  name: Scott Miller
+  email: scott.miller@test.com
+  admin: false
+  role: user
+  encrypted_password: $2a$10$NDaQ2l6.7dqkWTbqZGX6RuokqiUrfrcouiKc3YCGKIvz9KxhPt7uK
+
+user2:
+  id: 3
+  login: smith
+  identity_url: MyString
+  name: Scott Smith
+  email: scott.smith@test.com
+  admin: false
+  role: user
+
+oauth_user:
+  id: 4
+  login: test
+  identity_url: MyString
+  name: Scott Miller
+  email: scott.test@test.com
+  admin: false
+  role: user
+  provider: github

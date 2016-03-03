@@ -1,0 +1,273 @@
+ca:
+  language_name: "Català"
+  root: &root 'Home'
+  how_can_we_help: "Com el podem ajudar?"
+  browse_topics: "Navegar pels temes"
+  support_team: "Atenció al client"
+  nothing_here: "No hi ha res aquí!"
+
+  # Navigation
+  knowledgebase: "Base de coneixement"
+  community: "Comunitat"
+  ask_a_question: "Fer una pregunta"
+  home: *root
+  login: "Iniciar"
+  logout: "Sortir"
+  register: "Registrar-se"
+  back_to: "Tornar"
+  welcome_back: "Benvingut de nou %{username}"
+  your_profile: "El teu perfil"
+  your_tickets: "Els teus tiquets"
+  locale: "Locale"
+  change_your_locale: "Change your Locale"
+
+  # Voting widget
+  did_this_help: "Això ha solucionat el teu problema?"
+  yes_button: 'Si'
+  no_button: 'No'
+
+  # Search
+  search_placeholder: "Entra una paraula clau, tema o pregunta"
+  no_results: "No hi ha resultats, si us plau prova uns termes diferents!"
+  results_found:
+    one: "s'ha trobat un resultat per la teva cerca "
+    other: "s'han trobat %{count} resultats per la teva cerca "
+
+  # Community
+  forum_name: "Tema"
+  subject: "Assumpte"
+  last_activity: "Actiu per última vegada"
+  topic: "Debat"
+  replies: "Respostes"
+  last_post: "Últim post"
+  started_by: "Començat per %{username}"
+  reply: "Contesteu aquest tema"
+  submit_reply: "Pengeu una resposta"
+  posted: "Penjada"
+  start_discussion: "Comença un nou debat"
+  submit_start_discussion: "Comença debat"
+  should_message_be_private: "Aquest missatge hauria de ser privat?"
+  only_support_can_respond: "Només l'equip d'atenció al client pot respondre (crea un tiquet privat)"
+  responses_can_come_from_everyone: "Les respostes poden ser de la comunitat o de l'equip d'atenció al client (recomanat)"
+  collapsed_messages:
+      one: "1 missatge minimitzat"
+      two: "2 missatges minimitzat"
+      other: "%{count} missatge minimitzat"
+
+  # Knowledgebase
+  written_by: "Written By"
+  last_edited: "Last Edited"
+
+  # Tickets
+  tickets: "Tiquets"
+  no_tickets: "Encara no has creat cap tiquet"
+  ticket_number: "Ticket Number"
+  assigned_to_label: "Assigned to"
+  created_on: "Created on"
+
+  # Get Help
+  get_help_header: "Encara necessites ajuda?"
+  get_help_button: "Comença un debat"
+
+  # Profile
+  my_profile: 'El meu perfil'
+
+  # footer
+  powered_by: "Powered by Helpy. An Open Source Helpdesk."
+  get_your_copy: "Grab your copy on Github"
+
+  # devise/sessions/new
+  login: Iniciar sessió
+
+  # devise/shared/links
+  forgot_password: Has oblidat la teva contrasenya?
+
+  # devise/passwords/new
+  send_instructions: Envia'm les instruccions
+
+  # devise/passwords/edit
+  change_password: Contrassenya canviada
+  new_password: Nova contrassenya
+  new_password_confirmation: Confirma nova contrasenya
+
+  # devise/confirmations/new
+  resend: Re-envia les instruccions de confirmació
+
+  # devise/registrations/new
+  sign_up: Registrar-se
+
+  # Admin menu
+  discussions: Debats
+  content: Contingut
+  communities: Comunitats
+  app_store: App Store
+  search: Cerca
+
+  # Admin main/statuses
+  support_pipeline: Flux de treball d'atenció al client
+  new: Nou
+  active: Actiu
+  open: Obert
+  mine: Meu
+  pending: Pendent
+  closed: Resolt
+  spam: Spam
+  trash: Escombraries
+  discussion_managment: Gestió de debats
+  open_new_discussion: Obrir debat
+  assigned_to: "assignat a %{agent}"
+  unassigned: no assignat
+  private: privat
+  public: public
+  save_changes: Guardar canvis
+
+  # Discussion controls
+  change_status: Canviar estat
+  status: Estat
+  mark_closed: Marcar com resolt
+  reopen: Reobrir
+  mark_spam: Marcar com spam
+  mark_new: Marcar com nou
+  assign_agent: Assignar agent
+  selected_messages:
+    one: "1 missatge seleccionat"
+    two: "2 missatges seleccionats"
+    other: "%{count} missatges seleccionats"
+
+  # Discussion messages
+  reopen_message: "Aquest missatge ha estat re-obert per l'equip d'atenció al client."
+  close_message: "Aquest missatge ha estat tancat per l'equip d'atenció al client."
+  trash_message: "Aquest missatge ha estat eliminat."
+  assigned_message: "El debat ha estat transferit a %{assigned_to}."
+
+  # User Admin
+  contact_info: Contacte
+  social_info: Social
+  edit_user:
+  work_phone: feina
+  cell_phone: mòbil
+
+  # User search results
+  users_found:
+    one: "1 usuari trobat amb nom %{query}"
+    other: "%{count} usuaris trobats amb nom %{query}"
+
+  # Discussion View
+  asked_a_question: "%{user_name} ha preguntat..."
+  replied: "%{user_name} ha contestat..."
+  posted_note: "%{user_name} ha penjat com a missatge intern..."
+  type_reply: Escriu la teva resposta, o selecciona des d'un missatge comú a sota
+  select_common: Selecciona una resposta comuna
+  reply: Respon
+  internal_note: Nota interna
+  upvote:
+    one: "Vots positius | %{count}"
+    other: "Vots positius | %{count}"
+
+  # Content
+  new_category: Nova categoria
+  new_content: Nou contingut
+  front_page_categories: Categoria de la pàgina principal
+  other_categories: Altres categories
+  edit: Editar
+  edit_category: Editar categoria
+  select_category: Seleccionar categoria
+  delete: Esborrar
+  view_and_edit: "Veure i editar contingut"
+  delete_confirm: "Si us plau confirma que vols ELIMINAR això!"
+  select_icon_helptext: "Selecciona una icona per associar amb aquesta categoria (opcional)"
+  translate: "Translate to a different language"
+  view_on_site: "View on Site"
+  written_on: "Written on %{date_written}"
+  content_last_updated: "Last Updated on %{date_updated}"
+  featured_content: "Featured"
+  draft_content: "Draft"
+  published_content: "Published"
+  additional_settings: "Additional Settings"
+  content_status: "Content Status"
+
+  # Communities
+  new_community: Crea una nova comunitat
+  create_new_community: Crea una nova comunitat
+
+  # Mail messages
+  hello: "Hello %{user_name}"
+  new_user: "Thank you for contacting us.  Your message has been received by our support team and we will be in touch with you shortly with a response."
+  account_generated: "An account has been generated for you. To sign in, please use this link:"
+  above_this_line: "Make sure your reply appears above this line"
+  message_id: "Message ID"
+  message_response: "The following message has been posted in response to your question:"
+  view_online: "View this online:"
+
+  activerecord:
+    attributes:
+      user:
+        email: Email
+        password: Contrasenya
+        name: Nom
+        company: Empresa
+        work_phone: Feina
+        cell_phone: Mòbil
+        city: Ciutat
+        state: Estat o província
+      topic:
+        name: Assumpte
+      post:
+        kind: Sexe
+      category:
+        name: Nom
+        icon: Icona
+        keywords: Paraules clau
+        title_tag: Etiqueta de títol
+        meta_description: Meta descripció
+        front_page: Pàgina principal
+        active: Actiu
+      doc:
+        title: Títol
+        meta_description: Meta descripció
+        title_tag: Etiqueta de títol
+        keywords: Paraules clau
+        category_id: Categoria
+        active: Actiu
+        front_page: Destacat a la pàgina principal?
+      forum:
+        name: Nom
+        description: Descripció
+        private: Private
+
+    helpers:
+      submit:
+        topic:
+          create: Començar un nou debat
+        post:
+          create:
+
+  breadcrumbs:
+    application:
+      root: *root
+    categories:
+      root: *root
+    docs:
+      root: *root
+    forums:
+      root: *root
+    topics:
+      root: *root
+    posts:
+      root: *root
+    result:
+      root: *root
+  helpers:
+    actions: "Accions"
+    links:
+      back: "Endarrera"
+      cancel: "Cancel·lar"
+      confirm: "N'estàs segur?"
+      destroy: "Eliminar"
+      new: "Nou"
+      edit: "Editar"
+    titles:
+      edit: "Editar %{model}"
+      save: "Guardar %{model}"
+      new: "Nou %{model}"
+      delete: "Eliminar %{model}"

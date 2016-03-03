@@ -1,0 +1,33 @@
+<div class="row">
+
+	<div class="col-md-12">
+		<script>
+			Helpy.messages = '<%= j t(:collapsed_messages, count: @posts.count-2) %>';
+		</script>
+
+		<table id="posts">
+			<%= render :partial => 'post', :collection => @posts %>
+		</table>
+
+
+		<% if user_signed_in? && !@topic.forum.allow_post_voting == true %>
+		<div class="add-form">
+			<h4><%= t(:reply) %></h4>
+			<%#= error_messages_for :post -%>
+			<%= bootstrap_form_for :post, :url => topic_posts_path(@topic) do |f| -%>
+			  <%= f.text_area :body, :rows => 8, :cols => 160, label: 'Type your response:' -%></p>
+			  <%= f.hidden_field 'kind', value: 'reply' %>
+				<div class="add-screenshots">
+				<%= attachinary_file_field_tag 'post[screenshots]', @post, :screenshots unless Cloudinary.config.cloud_name.nil? %>
+				</div>
+				<%= hidden_field_tag :client_id %>
+				<%= f.submit t(:submit_reply) -%>
+			<% end -%>
+			</div>
+		<% else %>
+			<span class="hidden-xs pull-right"><%= link_to t(:reply, default: "Reply"), '#', data: {toggle: "modal", target: "#login-modal"}, class: 'btn btn-primary' %></span>
+		<% end -%>
+
+	</div>
+
+</div>
